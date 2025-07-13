@@ -43,8 +43,10 @@ export default function PerformanceMonitor() {
       let clsValue = 0
       const clsObserver = new PerformanceObserver((list) => {
         for (const entry of list.getEntries()) {
-          if (!entry.hadRecentInput) {
-            clsValue += entry.value
+          // Type assertion for layout-shift entries which have hadRecentInput and value
+          const clsEntry = entry as any
+          if (!clsEntry.hadRecentInput && clsEntry.value) {
+            clsValue += clsEntry.value
           }
         }
         console.log('CLS:', clsValue)
