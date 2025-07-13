@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { FaHome, FaChevronRight } from 'react-icons/fa'
+import { FaHome, FaChevronRight, FaFile } from 'react-icons/fa'
 
 export default function Breadcrumb() {
   const pathname = usePathname()
@@ -16,7 +16,7 @@ export default function Breadcrumb() {
   pathSegments.forEach(segment => {
     currentPath += `/${segment}`
     const name = segment.charAt(0).toUpperCase() + segment.slice(1).replace('-', ' ')
-    breadcrumbItems.push({ name, href: currentPath })
+    breadcrumbItems.push({ name, href: currentPath, icon: FaFile })
   })
 
   if (breadcrumbItems.length <= 1) return null
