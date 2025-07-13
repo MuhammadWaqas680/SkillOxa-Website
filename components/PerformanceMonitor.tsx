@@ -24,8 +24,12 @@ export default function PerformanceMonitor() {
       // First Input Delay (FID) - using first-input
       const fidObserver = new PerformanceObserver((list) => {
         for (const entry of list.getEntries()) {
-          const fid = entry.processingStart - entry.startTime
-          console.log('FID:', fid)
+          // Type assertion for first-input entries which have processingStart
+          const fidEntry = entry as any
+          if (fidEntry.processingStart) {
+            const fid = fidEntry.processingStart - entry.startTime
+            console.log('FID:', fid)
+          }
         }
       })
 
