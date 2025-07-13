@@ -1,0 +1,6 @@
+<svg width="400" height="240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" fill="#21759b"/>
+  <text x="200" y="110" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">WordPress Plugins</text>
+  <text x="200" y="135" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">2024</text>
+  <text x="200" y="160" font-family="Arial, sans-serif" font-size="12" fill="#f7b731" text-anchor="middle" dominant-baseline="middle">Blog Post</text>
+</svg>

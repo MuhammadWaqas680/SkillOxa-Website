@@ -1,0 +1,5 @@
+<svg width="400" height="240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" fill="#61dafb"/>
+  <text x="200" y="120" font-family="Arial, sans-serif" font-size="20" fill="#000" text-anchor="middle" dominant-baseline="middle">React & Next.js</text>
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="14" fill="#0052cc" text-anchor="middle" dominant-baseline="middle">Course Thumbnail</text>
+</svg>
